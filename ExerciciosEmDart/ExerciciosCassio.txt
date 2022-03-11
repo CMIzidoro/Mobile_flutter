@@ -1,0 +1,408 @@
+/*Básico:
+
+1. Entrar via teclado com a base e a altura de um retângulo, calcular e exibir sua área.
+
+void main() {
+  int a = 3;
+  int b = 4;
+  
+  int area = b*a;
+  print("A area é : $area");
+
+}
+
+2. Calcular e exibir a média aritmética de quatro valores quaisquer que serão digitados.
+
+void main() {
+  int a = 3;
+  int b = 4;
+  int c = 8;
+  int d = 3;
+  var media = (a+b+c+d)/4;
+  print("A Media é : $media");
+
+}
+
+3. Entrar via teclado com o valor de uma temperatura em graus Celsius, calcular e exibir sua temperatura 
+equivalente em Fahrenheit.
+
+void main() {
+  
+  var celsius = 30;
+  var fahrenheit = (celsius * 1.8) + 32;
+  
+  print("$celsius celsius equivale a  : $fahrenheit fahrenheit");
+
+}
+
+4. Entrar via teclado com o valor da cotação do dólar e uma certa quantidade de dólares. Calcular e
+exibir o valor correspondente em Reais (R$).
+  
+void main() {
+  
+  var cotacao = 5.16;
+  var dolar =  30;
+  var reais = dolar * cotacao;
+  print("$dolar Dolares equivale a: $reais em reais");
+
+}
+  
+5. Entrar via teclado com o valor de cinco produtos. Após as entradas, digitar um valor referente ao
+pagamento da somatória destes valores. Calcular e exibir o troco que deverá ser devolvido.
+void main() {
+  
+  var a = 5.16;
+  var b =  30;
+  var c = 45;
+  var d = 64;
+  var e = 23;
+  var total=a+b+c+d+e;
+  print("$total foi o total");
+
+}
+
+6. Calcular e exibir a área de um retângulo, a partir dos valores da base e altura que serão digitados.
+Se a área for maior que 100, exibir a mensagem “Terreno grande”, caso contrário, exibir a mensagem 
+“Terreno pequeno”.
+
+void main() {
+  int a = 3;
+  int b = 4;
+  
+  
+  int area = b*a;
+  
+  if (area <= 50)
+    print("A area é : $area terreno Pequeno");
+  else
+    print("A area é : $area terreno Grande");
+    
+  
+}
+
+7. Entrar com o peso e a altura de uma determinada pessoa. Após a digitação, exibir se esta pessoa 
+está ou não com seu peso ideal. Fórmula: peso/altura².
+
+void main() {
+  var peso = 80;
+  var altura = 1.83;
+  var imc = peso/(altura*altura);
+  
+  if (imc < 16){
+    print("Sobrepeso Severo");
+   }
+  else if (imc >=16 && imc <=19.9){
+    print("Subpeso");
+   }
+  else if (imc >= 20 && imc <=24.9 ){
+    print("Normal");
+    }
+  else if (imc >= 24 && imc <=29.9 ){
+    print("Sobrepeso");
+    }
+  else if (imc >= 30 && imc <=39.9 ){
+    print("Obeso");
+    }
+  else{
+    print("Obeso Morbido");
+    }
+  
+}
+
+
+8. A partir de três valores que serão digitados, verificar se formam ou não um triângulo. Em caso
+positivo, exibir sua classificação: “Isósceles, escaleno ou eqüilátero”. Um triângulo escaleno possui 
+todos os lados diferentes, o isósceles, dois lados iguais e o eqüilátero, todos os lados iguais.
+Para existir triângulo é necessário que a soma de dois lados quaisquer seja maior que o outro, isto,
+para os três lados
+
+void main() {
+  var a = 15;
+  var b = 5;
+  var c = 1;
+  
+  if(a+b > c && b+c > a){
+   if (a !=b && b!=c && c !=a ){
+    print("escaleno");
+   }
+  else if (a == b && b==c){
+    print("eqüilátero");
+   }
+  else{
+    print("isósceles");
+    }
+    
+print("forma trinangulo");
+    
+}else{
+    print("não forma trinagulo");
+  }    
+  
+}
+
+
+9. Entrar com o peso, o sexo e a altura de uma determinada pessoa. Após a digitação, exibir se esta 
+pessoa está ou não com seu peso ideal. Fórmula: peso/altura².
+void main() {
+  var peso = 70;
+  var altura = 1.60;
+  String sexo = "f";
+  var imc = peso/(altura*altura);  
+  
+  if(sexo =="m"){
+   if (imc < 16){
+    print("Sobrepeso Severo");
+   }
+  else if (imc >=16 && imc <=19.9){
+    print("Subpeso");
+   }
+  else if (imc >= 20 && imc <=24.9 ){
+    print("Normal");
+    }
+  else if (imc >= 24 && imc <=29.9 ){
+    print("Sobrepeso");
+    }
+  else if (imc >= 30 && imc <=39.9 ){
+    print("Obeso");
+    }
+  else{
+    print("Obeso Morbido");
+    }
+  
+  }else{
+    
+     if (imc < 17){
+    print("Sobrepeso Severo");
+   }
+  else if (imc >=17 && imc <=18.49){
+    print("Subpeso");
+   }
+  else if (imc >= 18.5 && imc <=24.99 ){
+    print("Normal");
+    }
+  else if (imc >=30 && imc <=34.99 ){
+    print("Sobrepeso");
+    }
+  else if (imc >= 35 && imc <=39.99 ){
+    print("Obeso");
+    }
+  else{
+    print("Obeso Morbido");
+    }
+  
+  }
+
+10. A partir dos valores da aceleração (a em m/s2), da velocidade inicial (v0 em m/s) e do tempo de percurso
+(t em s). Calcular e exibir a velocidade final de automóvel em km/h. Exibir mensagem de acordo com a
+tabela:
+
+
+Fórmula para o cálculo da velocidade em m/s: V = v0 + a. t
+
+void main() {
+  var aceleracao = 10;
+  var tempo = 3;
+  var vi= 2;
+  var at = aceleracao*tempo;
+  var v =  vi + at ;
+  
+  if(v<=40){
+    print("veiculo muito lento");
+  }else if(v>=40 &&v <=60 ){
+    print("Velocidade Permitida");
+    
+  }else if(v>=60 &&v <=80 ){
+    print("Velocidade de cruzeiro");
+    
+  }else if(v>=80 &&v <=120 ){
+    print("Veiculo Rapido");
+    
+  }else{
+    print("Veiculo muito rapido");
+  }
+}
+/*
+ 11. Entrar via teclado com um valor qualquer. Após a digitação, exibir a tabuada do valor solicitado, 
+ no intervalo de um a dez.
+ void main() {
+  int a = 10;
+  int b= 0;
+  for (int i = 1; i < 11; i++) {
+    b= a*i;
+    print( b);
+  } 
+}
+
+12. Entrar via teclado com um valor (X) qualquer. Digitar o intervalo que o programa que deverá
+calcular a tabuada do valor X digitado, sendo que o segundo valor (B), deverá ser maior que o primeiro (A).
+Exibir a tabuada do valor digitado, no intervalo decrescente, ou seja, a tabuada de X no intervalo de B para A.
+
+ void main() {
+  int a = 10;
+  int b= 0;
+  int x= 2;
+  for (int i = 10; i >= 1;) {
+    b= a*i;
+    i= i-x;
+    print( b);   
+  } 
+}
+
+13. Exibir os trinta primeiros valores da série de Fibonacci. A série: 1, 1, 2, 3, 5, 8, ...
+ void main() {
+  int a = 0;
+  int b= 01;
+  int x= 0;
+  int n = 20;
+  for (int i = 2; i <= n; i++ ) {
+    x= b;
+    b +=a;
+    a=x;
+    print( b);   
+  } 
+}
+
+
+14. Exibir os vinte primeiros valores da série de Bergamaschi. A série: 1, 1, 1, 3, 5, 9, 17, ...
+
+ void main() {
+  int a = 1;
+  int b= 01;
+  int x= 0;
+  int xa =1;
+  int n = 20;
+  for (int i = 0; i <= n; i++ ) { 
+    if (i<=2){
+      print(1);
+        
+    }else{
+    x= b;
+    b +=a+xa;
+    xa=a;
+    a=x;
+    
+    print( b);   
+    
+   }
+  } 
+}
+
+
+15. Calcular e exibir a soma dos “N” primeiros valores da seqüência abaixo. O valor “N” será digitado,
+deverá ser positivo, mas menor que cem. Caso o valor não satisfaça a restrição, enviar mensagem de erro e
+solicitar o valor novamente.
+A seqüência: 2, 5, 10, 17, 26, ....
+
+ void main() {
+   int aux =1;
+   int resultado= 0;
+   
+   for (int i = 1; i <= 20;) { 
+    if(i % 2 == 0){
+    i++;
+    }else{
+      resultado=i+aux;
+      aux=resultado;
+      print(resultado);
+      i++;
+    }
+   }
+}
+
+List e Map
+
+
+16. Armazenar dez números na memória do computador. Exibir os valores na ordem inversa à da digitação.
+
+ void main() {
+    var a = [4,1,2,4,5,61,23,41,512,5];
+      for (int i = 9; i >= 0;) { 
+        print(a[i]); 
+        i=i-1;
+      }
+}
+
+17. Armazenar dez valores na memória do computador.
+Após a digitação dos valores, criar uma rotina para
+ler os valores e achar e exibir o maior deles.
+
+ void main() {
+    var a = [4,1,2,4,5,61,23,41,512,5];
+    var aux= 0;
+      for (int i = 0; i <= 9;i++) { 
+        if(a[i]>=aux){
+          aux=a[i];
+        }
+        
+      }
+   print(aux);
+}
+
+
+18. Armazenar vinte valores em um vetor. 
+Após a digitação, entrar com uma constante
+multiplicativa que deverá
+multiplicar cada um dos valores do vetor e 
+armazenar o resultado no próprio vetor,
+na respectiva posição.
+
+ void main() {
+    var a = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
+    var aux= 0;
+    var cons=2;
+      for (int i = 0; i <= 19;i++) { 
+        
+          aux = cons*a[i];
+          print(aux);
+        
+        
+      }
+}
+
+
+19. Armazenar o nome e idade de 5 pessoas.
+Após a digitação, exibir os dados (nome e idade) 
+de todas as pessoas.
+void main() {
+  var ar = [['cassio',10 ],['caio',30],['victor',32],['samanta',13],['natalia',32]];
+  for(int i = 0; i <=4;i++){
+    print(ar[i]);   
+  }
+}
+
+
+20. Armazenar o nome, sexo e idade de 5 pessoas.
+As entradas devem ser apenas “F” ou “M” para o sexo
+e valores positivos para a idade. 
+Após a digitação dos dados,
+exibir os dados (nome, sexo e idade) de todas 
+as pessoas do sexo feminino.
+
+void main() {
+  var f = [];
+  var ar = [['cassio','M',10 ],['caio','M',30],['victor','M',32],['samanta','F',13],['natalia','F',32]];
+  for(int i = 0; i < 5; i++){
+      for(int a = 0; a < 2; a++){
+        if(ar[i][a]=='F'){
+         f.add(ar[i]);
+        } 
+      }
+  }
+  for(int x = 0; x < f.length;x++){
+    print(f[x]);
+    
+  }
+}
+
+Orientação a Objeto (Classe, Herança, etc)
+
+21. Criar um mini sistema bancário com as classes: Conta, Conta Corrente, Conta Poupança e Cliente.
+Cada classe deve ter atributos específicos. No sistema devemos ter pelo menos 3 funcionalidades: Saque,
+Depósito e Transferência.
+ */
+
+
+
+
+
+
