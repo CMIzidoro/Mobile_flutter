@@ -1,6 +1,4 @@
 # Mobile_flutter
 
-<h2>Aplicativo 01</h2>
-<td>
-  
-![App1](https://user-images.githubusercontent.com/61985297/157952263-baf6a403-c543-4c3f-be25-2f95fb13c01c.png)
+Projetos realizados na Matéria de Programação para Dispositivos Móveis, ministrada pelo JOSEFFE BARROSO DE OLIVEIRA
+![poze](https://user-images.githubusercontent.com/61985297/162432852-837c47dc-93be-4120-a8ad-05e631d7360e.gif)
